@@ -7,7 +7,7 @@ This is a small Pokedex app I'm currently working on. As you can see, there's a 
 ## Now, for the technical part:
 
 -   I started the app from scratch, installing and configuring the packages and dependencies I saw fit (linting and formatting tools, testing tools, typescript mandatory stuff, etc). I would have used Parser instead of Webpack (because it's a small app), but it sometimes gets trickier with some config.
--   I did my own styling from scratch, using plain css (\*scss). There's a bit of work left there, as I still can make things better by using SASS variables for colors and font changes. Will leave that for later. Also, the app is not fully responsive, so that's something I will also add soon.
+-   I did my own styling from scratch, using plain css (\*scss). There's a bit of work left there, as I still can make things better by using SASS variables for colors and font changes. Will leave that for later. Also, the app is not fully responsive yet, so that's something I will also add soon.
 -   I added Typescript and did some testing as well.
 
 I hope you guys like it!
