@@ -1,0 +1,15 @@
+@use '../Fonts/fira-sans.scss';
+
+#search-bar {
+    color: #404040;
+    font-family: 'fira-sans';
+    margin-bottom: 16px;
+    text-align: center;
+    input {
+        border: 1px solid #DBDBDB;
+        border-radius: 4px;
+        margin-left: 8px;
+        padding: 8px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,21 @@
+#header {
+    border-bottom: 2px solid #000000;
+    #header-content {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;        
+        margin: 0 auto;
+        max-width: 1280px;
+        padding: 15px 40px;
+        text-align: right;
+        #pokedex-top {
+            height: 70px;
+            width: 140px;
+        }
+        #brand-logo {
+            height: 51px;
+            width: 140px;
+        }
+    }
+}

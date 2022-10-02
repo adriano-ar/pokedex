@@ -1,0 +1,90 @@
+@use '../Fonts/fira-sans.scss';
+@use '../Fonts/fira-sans-bold.scss';
+
+.pokemon {
+    align-items: center;
+    border-bottom: 1px solid #727272;
+    color: #404040;
+    cursor: pointer;    
+    display: flex;
+    font-family: 'fira-sans';
+    &:last-child {
+        border-bottom: none;
+    }
+    .pokemon-name {
+        color: #2769BE;
+        font-family: 'fira-sans-bold';        
+    }
+    .pokemon-type {
+        display: flex;
+        flex-direction: column;
+        .type {
+            border-radius: 4px;
+            color: #FFFFFF;
+            font-size: 13px;
+            margin-bottom: 3px;
+            padding: 4px 10px;
+            &.bug {
+                background-color: #AABB22;
+            }
+            &.dark {
+                background-color: #775544;
+            }
+            &.dragon {
+                background-color: #7766EE;
+            }
+            &.electric {
+                background-color: #FFCC33;
+            }
+            &.fairy {
+                background-color: #EE99EE;
+            }
+            &.fighting {
+                background-color: #BB5544;
+            }
+            &.fire {
+                background-color: #FF4422;
+            }
+            &.flying {
+                background-color: #8899FF;                
+            }
+            &.ghost {
+                background-color: #6666BB;
+            }
+            &.grass {
+                background-color: #77CC55;
+            }
+            &.ground {
+                background-color: #DDBB55;
+            }
+            &.ice {
+                background-color: #66CCFF;
+            }
+            &.normal {
+                background-color: #AAAA99;
+            }
+            &.poison {
+                background-color: #AA5599;
+            }
+            &.psychic {
+                background-color: #FF5599;
+            }
+            &.rock {
+                background-color: #BBAA66;
+            }
+            &.steel {
+                background-color: #AAAABB;
+            }
+            &.water {
+                background-color: #3399FF;
+            }
+        }
+    }
+    div {
+        flex-basis: 100%;
+        text-align: center;        
+    }
+    img {
+        width: 70px;
+    }
+}
