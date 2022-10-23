@@ -6,13 +6,19 @@ export default interface IPokemonDetails {
     name: string;
     image: string;
     type: Array<string>;
-    height: number;
-    weight: number;
+    height: string;
+    weight: string;
     ability: Array<string>;
     hp: number;
+    hpBar: number;
     attack: number;
+    attackBar: number;
     defense: number;
+    defenseBar: number;
     sattack: number;
+    sattackBar: number;
     sdef: number;
+    sdefBar: number;
     speed: number;
+    speedBar: number;
 }

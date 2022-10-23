@@ -16,15 +16,21 @@ export default function PokemonDetail(Props: Props) {
         name: "",
         image: "",
         type: [],
-        height: 0,
-        weight: 0,
+        height: "",
+        weight: "",
         ability: [],
         hp: 0,
+        hpBar: 0,
         attack: 0,
+        attackBar: 0,
         defense: 0,
+        defenseBar: 0,
         sattack: 0,
+        sattackBar: 0,
         sdef: 0,
+        sdefBar: 0,
         speed: 0,
+        speedBar: 0,
     });
 
     useEffect(() => {
@@ -46,17 +52,12 @@ export default function PokemonDetail(Props: Props) {
                 onClick={() => hidePokemonDetail()}
                 id="close-button"
             ></div>
-            <div id="pokemon-name">
-                {pokemonDetails.name.charAt(0).toUpperCase() +
-                    pokemonDetails.name.slice(1)}
-            </div>
+            <div id="pokemon-name">{pokemonDetails.name}</div>
             <img id="pokemon-pic" src={pokemonDetails.image} />
             <div className="stats-title">Pokédex data</div>
             <div className="stat-row">
                 <div className="stat-label">National № </div>
-                <div className="stat">
-                    {(pokemonDetails.id + "").padStart(3, "0")}
-                </div>
+                <div className="stat">{pokemonDetails.id}</div>
             </div>
             <div className="stat-row">
                 <div className="stat-label">Type</div>
@@ -70,15 +71,11 @@ export default function PokemonDetail(Props: Props) {
             </div>
             <div className="stat-row">
                 <div className="stat-label">Height </div>
-                <div className="stat">{`${(
-                    pokemonDetails.height * 0.1
-                ).toString()} m`}</div>
+                <div className="stat">{pokemonDetails.height}</div>
             </div>
             <div className="stat-row">
                 <div className="stat-label">Weight </div>
-                <div className="stat">{`${(
-                    pokemonDetails.weight * 0.1
-                ).toString()} kg`}</div>
+                <div className="stat">{pokemonDetails.weight}</div>
             </div>
             <div className="stat-row">
                 <div className="stat-label">Abilities </div>
@@ -101,7 +98,7 @@ export default function PokemonDetail(Props: Props) {
                 <div className="stat-bar">
                     <div
                         className="stat-bar-value"
-                        style={{ width: `${(pokemonDetails.hp * 100) / 250}%` }}
+                        style={{ width: `${pokemonDetails.hpBar}%` }}
                     ></div>
                 </div>
             </div>
@@ -111,9 +108,7 @@ export default function PokemonDetail(Props: Props) {
                 <div className="stat-bar">
                     <div
                         className="stat-bar-value"
-                        style={{
-                            width: `${(pokemonDetails.attack * 100) / 190}%`,
-                        }}
+                        style={{ width: `${pokemonDetails.attackBar}%` }}
                     ></div>
                 </div>
             </div>
@@ -123,7 +118,7 @@ export default function PokemonDetail(Props: Props) {
                 <div className="stat-bar">
                     <div
                         className="stat-bar-value"
-                        style={{ width: `${(pokemonDetails.hp * 100) / 180}%` }}
+                        style={{ width: `${pokemonDetails.defenseBar}%` }}
                     ></div>
                 </div>
             </div>
@@ -133,7 +128,7 @@ export default function PokemonDetail(Props: Props) {
                 <div className="stat-bar">
                     <div
                         className="stat-bar-value"
-                        style={{ width: `${(pokemonDetails.hp * 100) / 194}%` }}
+                        style={{ width: `${pokemonDetails.sattackBar}%` }}
                     ></div>
                 </div>
             </div>
@@ -143,7 +138,7 @@ export default function PokemonDetail(Props: Props) {
                 <div className="stat-bar">
                     <div
                         className="stat-bar-value"
-                        style={{ width: `${(pokemonDetails.hp * 100) / 130}%` }}
+                        style={{ width: `${pokemonDetails.sdefBar}%` }}
                     ></div>
                 </div>
             </div>
@@ -153,7 +148,7 @@ export default function PokemonDetail(Props: Props) {
                 <div className="stat-bar">
                     <div
                         className="stat-bar-value"
-                        style={{ width: `${(pokemonDetails.hp * 100) / 150}%` }}
+                        style={{ width: `${pokemonDetails.speedBar}%` }}
                     ></div>
                 </div>
             </div>
