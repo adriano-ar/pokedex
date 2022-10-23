@@ -49,22 +49,22 @@ export default function PokemonList() {
     return (
         <div id="pokemon-list-wrapper">
             <Search searchPokemon={searchPokemon} />
-            <div id="sorter">
-                <div className="stat"></div>
-                <div className="stat">#</div>
-                <div className="stat">Name</div>
-                <div className="stat">Type</div>
-                <div className="stat">HP</div>
-                <div className="stat">Attack</div>
-                <div className="stat">Defense</div>
-                <div className="stat">Sp. Atk</div>
-                <div className="stat">Sp. Def</div>
-                <div className="stat">Speed</div>
-            </div>
             <div
                 id="pokemon-list"
                 className={showingPokemonDetail ? "shrink" : ""}
             >
+                <div id="sorter">
+                    <div className="stat"></div>
+                    <div className="stat">#</div>
+                    <div className="stat">Name</div>
+                    <div className="stat">Type</div>
+                    <div className="stat">HP</div>
+                    <div className="stat">Attack</div>
+                    <div className="stat">Defense</div>
+                    <div className="stat">Sp. Atk</div>
+                    <div className="stat">Sp. Def</div>
+                    <div className="stat">Speed</div>
+                </div>
                 {pokemonList.map((pokemon) => (
                     <Pokemon
                         showPokemonDetail={showPokemonDetail}

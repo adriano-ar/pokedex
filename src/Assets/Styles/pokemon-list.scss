@@ -10,20 +10,17 @@
     position: relative;
     width: 100%;
     #sorter {
-        display: flex;
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
         .stat {
             background-color: #EBEBEB;
             border: 1px solid #DBDBDB;
             box-sizing: border-box;
             color: #404040;
-            flex-basis: 100%;
             font-family: 'fira-sans';
             font-size: 16px;
             font-weight: 700;
             padding: 8px 10px;
-            &:first-child {
-                flex-basis: 35%;
-            }            
         }
     }
     #pokemon-list {

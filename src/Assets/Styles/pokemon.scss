@@ -6,8 +6,9 @@
     border-bottom: 1px solid #727272;
     color: #404040;
     cursor: pointer;    
-    display: flex;
+    display: grid;    
     font-family: 'fira-sans';
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     &:last-child {
         border-bottom: none;
     }
